@@ -38,12 +38,13 @@ SET MAVEN_OPTS=-Dmaven.repo.local=C:\Tools\m2
 @REM command path
 @REM
 
-SET MAVEN_HOME=C:\Tools\apache-maven-3.5.0
-SET JAVA_HOME=C:\Tools\jdk
-SET MSVS=C:\Program Files (x86)\Microsoft Visual Studio 12.0
-SET PROTO_BIN=C:\Tools\protobuf-2.5.0
+SET MAVEN_HOME=%MAVEN_HOME%
+SET JAVA_HOME=%JAVA_HOME%
+SET MSVS=C:\Program Files\Microsoft Visual Studio 10.0
+SET PROTO_BIN=C:\Program Files\protoc-2.5.0-win32
 SET GIT_HOME=C:\Program Files\Git
+SET ZLIB_HOME=%ZLIB_HOME%
 
-SET PATH=%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%PROTO_BIN%;%GIT_HOME%\bin;%PATH%
+SET PATH=%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%PROTO_BIN%;%GIT_HOME%\bin;%ZLIB_HOME%\bin;%PATH%
 
 CALL "%MSVS%\VC\vcvarsall.bat" %VCVARSPLAT%
